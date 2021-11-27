@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class=" p-5 bg-white rounded ">
+      <%= simple_form_for @leaflet do |f| %>
+        <%= f.input :name, label: "Nombre" %>
+        <%= f.input :lastname, label: "Apellido" %>
+        <%= f.input :fone, label: "Telefono" %>
+        <%= f.input :email, label: "Email" %>
+        <%= f.input :status, label: "Estado P, M, C" %>
+        <%= f.input :user_id, label: "Email Usuario" %>
+        
+        <%= f.submit "Crear Prospecto", class: "btn btn-primary btn-block" %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 text-center">
+    <%= link_to "VOLVER", leaflets_path, class:"btn btn-primary" %>
+  </div>
+</div>
